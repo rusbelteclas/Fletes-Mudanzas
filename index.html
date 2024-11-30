@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Fletes y Mudanzas Clemente ofrece servicios profesionales de mudanzas y transporte en Tuxtla Gutiérrez, Chiapas. Contáctanos para obtener una cotización.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fletes y Mudanzas Clemente</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="/images/3d-truck.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+</head>
+
+<body class="bg-gray-50 fade-in">
+    <header
+        class="fixed top-0 left-0 w-full bg-gradient-to-r from-green-500 to-green-700 text-white py-4 shadow-lg z-50">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div class="flex items-center space-x-4">
+                <i class="fas fa-truck text-3xl"></i>
+                <h1 class="text-3xl font-bold tracking-tight">Fletes y Mudanzas Clemente</h1>
+            </div>
+
+            <nav class="hidden md:flex space-x-6">
+                <a href="#inicio" class="scroll-link hover:text-green-200 transition duration-300">Inicio</a>
+                <a href="#servicios" class="scroll-link hover:text-green-200 transition duration-300">Servicios</a>
+                <a href="#contacto" class="scroll-link hover:text-green-200 transition duration-300">Contacto</a>
+            </nav>
+
+            <button id="mobile-menu-btn" class="md:hidden">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </header>
+    <div class="h-20"></div>
+    <section id="inicio" class="relative parallax-bg fade-in" style="background-image: url('/images/Truck.png');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative container mx-auto text-center text-white py-24 px-4">
+            <h2 class="text-5xl font-extrabold mb-6">¡Llevamos tus sueños con cuidado!</h2>
+            <p class="text-xl max-w-2xl mx-auto mb-8">Más de 20 años de experiencia en mudanzas y fletes en el estado de
+                Tuxtla Gutiérrez, Chiapas. Servicio profesional, seguro y confiable.</p>
+            <a href="#contacto"
+                class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg">Solicitar
+                Cotización</a>
+        </div>
+    </section>
+    <section id="servicios" class="py-16 bg-white fade-in">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-green-800 mb-12">Nuestros Servicios</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md service-card">
+                    <img src="/images/truck2.png" alt="Camioneta Mudanza Residencial" class="w-full service-image">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-4 text-green-700">Mudanzas Residenciales</h3>
+                        <p class="text-gray-600">Traslado seguro de tus pertenencias con el máximo cuidado y
+                            profesionalismo.</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md service-card">
+                    <img src="/images/truck3.png.jpg" alt="Camioneta Mudanza Oficina" class="w-full service-image">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-4 text-green-700">Mudanzas de Oficina</h3>
+                        <p class="text-gray-600">Minimizamos la interrupción de tu negocio durante el traslado.</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md service-card">
+                    <img src="/images/truck4.jpg" alt="Camioneta Fletes" class="w-full service-image">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-4 text-green-700">Fletes Locales y Foráneos</h3>
+                        <p class="text-gray-600">Servicio de transporte confiable en Tuxtla y toda la región.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contacto" class="py-16 bg-gray-100 fade-in">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-green-800 mb-6">Contáctanos</h2>
+                    <p class="text-gray-600 mb-8">Estamos listos para ayudarte. Llámanos, escríbenos o llena el
+                        formulario.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <i class="fas fa-phone text-green-600"></i>
+                            <span>+52 961-455-5766</span>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <i class="fas fa-envelope text-green-600"></i>
+                            <span>gmundoclemente@gmail.com</span>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <i class="fas fa-location-pin text-green-600 text-xl"></i>
+                            <span class="text-gray-600">Av. 13a. Sur Pte. 894-1022, San Francisco, 29000 Tuxtla
+                                Gutiérrez, Chis.</span>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <i class="fas fa-clock text-green-600 text-xl"></i>
+                            <span class="">
+                                Lunes a Domingo: 9:00 AM - 12:00 AM
+                            </span>
+                        </div>
+                    </div>
+                    <div class="map-container mt-12">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3820.6534254461676!2d-93.12798432484954!3d16.744135784037482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTbCsDQ0JzM4LjkiTiA5M8KwMDcnMzEuNSJX!5e0!3m2!1ses-419!2smx!4v1732917250087!5m2!1ses-419!2smx"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <form id="contact-form" class="bg-white p-8 rounded-xl shadow-lg">
+                    <input type="text" name="name" placeholder="Nombre Completo"
+                        class="w-full p-3 mb-4 border rounded-lg" required />
+                    <input type="email" name="email" placeholder="Correo Electrónico"
+                        class="w-full p-3 mb-4 border rounded-lg" required />
+                    <input type="tel" name="phone" placeholder="Número de Teléfono"
+                        class="w-full p-3 mb-4 border rounded-lg" required />
+                    <textarea name="message" placeholder="Describe tu mudanza" class="w-full p-3 mb-4 border rounded-lg"
+                        rows="4" required></textarea>
+                    <button type="submit"
+                        class="w-full bg-green-600 text-white p-3 rounded-lg hover:bg-green-700 transition duration-300">Enviar
+                        Solicitud</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-gradient-to-r from-green-700 to-green-800 text-white py-16">
+        <div class="container mx-auto text-center">
+            <div class="flex justify-center gap-8 mb-6">
+                <a href="https://www.facebook.com/share/19bGa6YzbD/?mibextid=LQQJ4d"
+                    class="text-white hover:text-green-300 transition duration-300 text-3xl">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gmundoclemente@gmail.com"
+                    class="text-white hover:text-green-300 transition duration-300 text-3xl">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.instagram.com/FletesClemente"
+                    class="text-white hover:text-green-300 transition duration-300 text-3xl">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/5219614555766"
+                    class="text-white hover:text-green-300 transition duration-300 text-3xl">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+            <div class="mb-8">
+                <p class="text-lg">Contáctanos fácilmente en:</p>
+                <p class="text-xl font-semibold">gmundoclemente@gmail.com</p>
+                <p class="text-xl font-semibold">+52 961-455-5766</p>
+            </div>
+            <p class="text-sm text-gray-300">&copy; 2024 Fletes y Mudanzas Clemente. Todos los derechos reservados.</p>
+            <div class="mt-8">
+                <a href="#inicio" class="text-white hover:text-green-300 px-4 py-2 transition duration-300">Inicio</a>
+                <a href="#servicios"
+                    class="text-white hover:text-green-300 px-4 py-2 transition duration-300">Servicios</a>
+                <a href="#contacto"
+                    class="text-white hover:text-green-300 px-4 py-2 transition duration-300">Contacto</a>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/529614555766" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp text-2xl" aria-hidden="true"></i>
+    </a>
+    <script src="js/index.js"></script>
+    <div id="formModal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+        <div class="bg-white rounded-lg shadow-xl max-w-md w-full p-6 relative">
+            <span class="modal-close absolute top-4 right-4 text-gray-500 hover:text-gray-700 cursor-pointer text-2xl">
+                &times;
+            </span>
+            <h2 id="modalTitle" class="text-2xl font-bold mb-4 text-center"></h2>
+            <p id="modalMessage" class="text-gray-600 text-center mb-6"></p>
+            <div class="flex justify-center">
+                <button id="modalCloseBtn"
+                    class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition duration-300">
+                    Cerrar
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
